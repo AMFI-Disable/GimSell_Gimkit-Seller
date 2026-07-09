@@ -1,4 +1,4 @@
-# Gimkit Seller - Sell Duplicate Skins, Trails & Stickers
+# GimSell - Sell Duplicate Skins, Trails & Stickers
 
 An automated duplicate cosmetic seller script for the Gimkit Locker page (`https://www.gimkit.com/rewards/locker`). It features a native 3D-styled control panel that collapses into a floating widget when minimized.
 

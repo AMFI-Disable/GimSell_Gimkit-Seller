@@ -1,5 +1,5 @@
 // ==UserScript==
-// @name         Gimkit Seller - Sell Duplicate Skins, Trails & Stickers
+// @name         GimSell - Sell Duplicate Skins, Trails & Stickers
 // @namespace    http://tampermonkey.net/
 // @version      1.0
 // @description  Automates selling of duplicate cosmetics (Gims, trails, stickers) on the Gimkit Locker page with a native look and feel.
@@ -295,7 +295,7 @@
             <div id="gimkit-seller-header">
                 <div id="gimkit-seller-title">
                     <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
-                    Gimkit Seller
+                    GimSell
                 </div>
                 <div id="gimkit-seller-close">&times;</div>
             </div>
@@ -334,7 +334,7 @@
         // Create minimized overlay button
         const miniBtn = document.createElement('div');
         miniBtn.id = 'gimkit-seller-minimized';
-        miniBtn.title = 'Open Gimkit Seller (Or press Alt+S / Alt+G)';
+        miniBtn.title = 'Open GimSell (Or press Alt+S / Alt+G)';
         // Padlock SVG icon
         miniBtn.innerHTML = `<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>`;
         document.body.appendChild(miniBtn);
