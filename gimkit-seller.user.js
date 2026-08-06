@@ -10,8 +10,8 @@
 // @run-at       document-end
 // ==/UserScript==
 
-(function() {
-    'use strict';
+(() => {
+    
 
     // Import Poppins Google Font for Gimkit typography matching
     const fontLink = document.createElement('link');
@@ -593,7 +593,7 @@
             let itemsFound = false;
             const checkObj = (obj, depth = 0) => {
                 if (!obj || depth > 5) return;
-                for (let k in obj) {
+                for (const k in obj) {
                     if (Array.isArray(obj[k])) {
                         log(`Found array prop: "${k}" with ${obj[k].length} items.`, "info");
                         itemsFound = true;
