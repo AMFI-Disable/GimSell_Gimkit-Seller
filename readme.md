@@ -23,9 +23,9 @@ To show or hide the menu instantly at any time on the Locker page, press:
 
 ---
 
-## Installation & Setup
+## Installation And Setup
 
 1. Install a userscript manager browser extension like [Tampermonkey](https://www.tampermonkey.net/) or [Violentmonkey](https://violentmonkey.github.io/).
-2. Copy the full source code of the `gimkit_duplicate_seller.user.js` file.
+2. Copy the full source code of the `gimkit-seller.user.js` file.
 3. In your userscript manager Dashboard, create a new userscript, paste the code, and save.
 4. Open [Gimkit Locker](https://www.gimkit.com/rewards/locker). The panel will load automatically.
