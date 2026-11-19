@@ -1,9 +1,9 @@
 // ==UserScript==
 // @name         GimSell - Sell Duplicate Skins, Trails & Stickers
-// @namespace    http://tampermonkey.net/
+// @namespace    https://github.com/AMFI-Disable/GimSell_Gimkit-Seller
 // @version      1.0
 // @description  Automates selling of duplicate cosmetics (Gims, trails, stickers) on the Gimkit Locker page with a native look and feel.
-// @author       Antigravity
+// @author       AMFI-Disable
 // @match        https://www.gimkit.com/*
 // @icon         https://www.google.com/s2/favicons?sz=64&domain=gimkit.com
 // @grant        none
