@@ -59,5 +59,24 @@ export const siteConfig = {
     "Tampermonkey or Violentmonkey",
     "Chrome / Firefox / Safari",
     "Educational & client-side automation use"
+  ],
+  "hubName": "AMFI Hangar",
+  "hubHash": "hangar",
+  "previewTabs": [
+    {
+      "tab": "Duplicate Scan",
+      "title": "Keep-One Guarantee",
+      "body": "Identifies duplicate Gims, trails, and stickers in your locker while preserving at least one copy of every item."
+    },
+    {
+      "tab": "Floating HUD",
+      "title": "Collapsible Native Widget",
+      "body": "Blends into the Gimkit Locker page with live progress counters and start/pause hotkeys."
+    },
+    {
+      "tab": "Client-Side",
+      "title": "Zero External Servers",
+      "body": "Executes 100% inside your browser session with no credential sharing or external requests."
+    }
   ]
 } as const;
