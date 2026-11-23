@@ -4,6 +4,14 @@ All notable changes, UI enhancements, and feature updates for GimSell (Gimkit Du
 
 ---
 
+## [Unreleased]
+
+### Changed
+
+- Restored the Star History chart section and links in `readme.md` and `website/src/main.ts`.
+
+---
+
 ## [1.1.0] - Refinements And Naming Standardization
 
 ### Added
