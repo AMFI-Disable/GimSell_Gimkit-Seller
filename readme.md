@@ -17,6 +17,18 @@
 
 ---
 
+## Star History
+
+<a href="https://www.star-history.com/?type=date&repos=amfi-disable%2Fgimsell_gimkit-seller">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/chart?repos=amfi-disable%2Fgimsell_gimkit-seller&type=date&theme=dark&legend=top-left" />
+    <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/chart?repos=amfi-disable%2Fgimsell_gimkit-seller&type=date&legend=top-left" />
+    <img alt="AMFI-Disable/GimSell_Gimkit-Seller Star History Chart" src="https://api.star-history.com/chart?repos=amfi-disable%2Fgimsell_gimkit-seller&type=date&legend=top-left" />
+  </picture>
+</a>
+
+---
+
 ## Educational & Fair-Play Disclaimer
 
 > [!CAUTION]
@@ -60,15 +72,3 @@ To show or hide the menu instantly at any time on the Locker page, press:
 ## License And Terms
 
 Licensed under the [MIT License](license). Copyright (c) 2026 AMFI-Disable.
-
----
-
-## Star History
-
-<a href="https://www.star-history.com/#AMFI-Disable/GimSell_Gimkit-Seller&Date">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/svg?repos=AMFI-Disable/GimSell_Gimkit-Seller&type=Date&theme=dark" />
-    <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/svg?repos=AMFI-Disable/GimSell_Gimkit-Seller&type=Date" />
-    <img alt="AMFI-Disable/GimSell_Gimkit-Seller Star History Chart" src="https://api.star-history.com/svg?repos=AMFI-Disable/GimSell_Gimkit-Seller&type=Date" />
-  </picture>
-</a>
