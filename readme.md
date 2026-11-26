@@ -12,7 +12,7 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg?style=flat-square)](license)
 [![Privacy: 100% Client-Side](https://img.shields.io/badge/Privacy-100%25%20Client--Side-purple.svg?style=flat-square)](#key-features)
 
-[Changelog](changelog.md) · [Security Policy](security.md) · [MIT License](license)
+[中文文档](readme.zh-cn.md) · [Contributing](contributing.md) · [Changelog](changelog.md) · [Security Policy](security.md) · [MIT License](license)
 
 </div>
 
