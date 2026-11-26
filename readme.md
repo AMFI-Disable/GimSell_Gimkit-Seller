@@ -1,8 +1,9 @@
 <div align="center">
 
-# GimSell - Sell Duplicate Skins, Trails & Stickers
+# GimSell
 
-**Automated Duplicate Cosmetic Seller For Gimkit Locker**  
+**Duplicate Cosmetic Preview For Gimkit Locker**
+
 *In-page userscript with a collapsible floating widget engineered for client-side locker inventory management.*
 
 [![Website: Live](https://img.shields.io/badge/Website-Live-66BB6A.svg?style=flat-square)](https://amfi-disable.github.io/GimSell_Gimkit-Seller/)
@@ -43,9 +44,9 @@
 
 - **Automatic Activation**: The panel is completely hidden on other pages to avoid clutter, and will **only appear when you open or navigate to the Locker page** (`/rewards/locker`).
 - **Collapsible UI**: Clicking the close button (`x`) minimizes the panel into a small, floating purple padlock icon in the bottom-right corner. Clicking it restores the full panel.
-- **Smart DOM Badge Scanning**: Generic duplicate detection that finds items with count badges $\ge 2$ dynamically.
-- **Optimized Sale Loops**: Simulates clicking, modal transitions, and final confirmation buttons to sell all duplicates in a single stack at once.
-- **Title Case Naming**: Dynamically parses image paths to name Gims/stickers (e.g. `elementalElectricity` $\rightarrow$ `Elemental Electricity`).
+- **Visible stack preview.** Scan the active locker view to see readable quantities and how many copies exceed one.
+- **Quantity comparison.** After using Gimkit’s own controls to choose and confirm a quantity, scan again. A changed badge displays its previous count. Filtered cards, missing badges and ambiguous counts are labelled separately.
+- **Local processing.** The preview reads the current page and stores the previous scan in memory until you leave the locker.
 
 ---
 

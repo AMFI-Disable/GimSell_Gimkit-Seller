@@ -1,0 +1,68 @@
+<!doctype html>
+<meta charset="utf-8">
+<title>Locker fixture</title>
+<main>
+    <button><img src="/trail.svg" alt="Trail"><span id="copies">12</span></button>
+    <button><img src="/one.svg" alt="Single"><span>1</span></button>
+    <button><img src="/multi.svg" alt="Ambiguous"><span>2</span><span>10</span></button>
+    <button hidden><img src="/hidden.svg" alt="Hidden"><span>3</span></button>
+    <div role="dialog"><button><img src="/irrelevant.svg" alt="Dialog"><span>9</span></button>
+        <button id="native">Sell</button>
+    </div>
+</main>
+<output id="result"></output>
+<script src="/userscript.js"></script>
+<script>
+    const result = document.querySelector('#result');
+    try {
+        let nativeClicks = 0;
+        document.querySelector('main').onclick = () => nativeClicks++;
+        const ui = () => document.querySelector('#gimkit-seller-panel').shadowRoot;
+        const scan = () => ui().querySelector('#scan').click();
+        const rows = () => ui().querySelector('#items').textContent;
+        function check(condition, message) {
+            if (!condition) throw new Error(message);
+        }
+        scan();
+        check(ui().querySelectorAll('li').length === 1 && rows().includes('12 owned, 11 extra'), 'Visible multi-digit stack');
+        check(nativeClicks === 0, 'Scanning clicked a host control');
+        document.querySelector('#native').click(); // Simulate the user and a rejected native sale.
+        scan();
+        check(rows().includes('12 owned, 11 extra') && !rows().includes('previously'), 'Rejected sale changed observation');
+        document.querySelector('#copies').textContent = '1';
+        scan();
+        check(rows().includes('1 owned (previously 12), 0 extra'), 'Observed change to one');
+        document.querySelector('#copies').textContent = '2';
+        scan();
+        document.querySelector('#copies').remove();
+        scan();
+        check(rows().includes('quantity unclear; previously 2'), 'Missing badge interpreted as sale');
+        const badge = document.createElement('span');
+        badge.textContent = '3';
+        const card = document.querySelector('main button');
+        card.appendChild(badge);
+        scan();
+        const other = card.cloneNode(true);
+        card.after(other);
+        scan();
+        check(rows().includes('quantity unclear; previously 3'), 'Shared artwork treated as unique identity');
+        other.remove();
+        scan();
+        card.remove();
+        scan();
+        check(rows().includes('no longer visible; previously 3'), 'Filtered card treated as sale');
+        ui().querySelector('#hide').click();
+        check(ui().querySelector('section').hidden, 'Minimise');
+        dispatchEvent(new KeyboardEvent('keydown', {altKey: true, code: 'KeyG'}));
+        check(!ui().querySelector('section').hidden, 'Hotkey restore');
+        history.pushState({}, '', '/news?redirect=/rewards/locker');
+        dispatchEvent(new PopStateEvent('popstate'));
+        check(!document.querySelector('#gimkit-seller-panel'), 'Off-route preview');
+        history.pushState({}, '', '/rewards/locker');
+        dispatchEvent(new PopStateEvent('popstate'));
+        check(!rows() && nativeClicks === 1, 'Stale state or unexpected host click');
+        result.textContent = 'PASS';
+    } catch (error) {
+        result.textContent = String(error);
+    }
+</script>

@@ -3,7 +3,7 @@ export const siteConfig = {
   "repoUrl": "https://github.com/AMFI-Disable/GimSell_Gimkit-Seller",
   "category": "Browser Userscript",
   "accent": "#66BB6A",
-  "tagline": "In-page userscript with a collapsible floating widget engineered for automated duplicate cosmetic selling in the Gimkit Locker.",
+  "tagline": "Preview duplicate cosmetics in the Gimkit Locker and compare visible quantities after a manual sale.",
   "primaryCta": {
     "label": "Install Userscript",
     "href": "#quick-start"
@@ -16,7 +16,7 @@ export const siteConfig = {
   "features": [
     {
       "title": "Duplicate Detection",
-      "desc": "Automatically scans your Gimkit Locker for duplicate Gims, trails, and stickers while keeping one copy of each."
+      "desc": "Reads visible quantity badges and shows how many copies exceed one."
     },
     {
       "title": "Native Floating Widget",
@@ -24,7 +24,7 @@ export const siteConfig = {
     },
     {
       "title": "Keyboard Hotkeys",
-      "desc": "Start, pause, or toggle the widget quickly with built-in keyboard shortcuts."
+      "desc": "Minimise or reopen the preview with Alt+S or Alt+G."
     },
     {
       "title": "100% Client-Side",
@@ -37,12 +37,12 @@ export const siteConfig = {
       "desc": "Inspects unlocked cosmetics in the Gimkit Locker UI and counts duplicates per item."
     },
     {
-      "title": "Safe Queue Filtering",
-      "desc": "Excludes unique items and keeps at least one copy of every cosmetic before queuing sales."
+      "title": "Review Extra Copies",
+      "desc": "Review the extra copies and use Gimkit’s native controls to choose and confirm a quantity."
     },
     {
-      "title": "Paced Batch Selling",
-      "desc": "Triggers sell actions sequentially with live progress counters in the floating widget."
+      "title": "Compare Quantities",
+      "desc": "Scan again to compare visible counts. Missing cards and ambiguous badges are identified separately."
     }
   ],
   "installCmds": [
@@ -58,20 +58,20 @@ export const siteConfig = {
   "requirements": [
     "Tampermonkey or Violentmonkey",
     "Chrome / Firefox / Safari",
-    "Educational & client-side automation use"
+    "Access to the Gimkit Locker"
   ],
   "hubName": "AMFI Hangar",
   "hubHash": "hangar",
   "previewTabs": [
     {
       "tab": "Duplicate Scan",
-      "title": "Keep-One Guarantee",
-      "body": "Identifies duplicate Gims, trails, and stickers in your locker while preserving at least one copy of every item."
+      "title": "Visible Extra Copies",
+      "body": "Shows how many copies exceed one for each visible stack with a readable badge."
     },
     {
       "tab": "Floating HUD",
       "title": "Collapsible Native Widget",
-      "body": "Blends into the Gimkit Locker page with live progress counters and start/pause hotkeys."
+      "body": "Drag the preview, minimise it or reopen it with a keyboard shortcut."
     },
     {
       "tab": "Client-Side",
