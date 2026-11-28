@@ -4,6 +4,8 @@
 // @version      1.2.0
 // @description  Preview visible duplicate cosmetic stacks and compare locker quantities after using Gimkit's native controls.
 // @author       AMFI-Disable
+// @updateURL    https://raw.githubusercontent.com/AMFI-Disable/GimSell_Gimkit-Seller/main/gimkit-seller.user.js
+// @downloadURL  https://raw.githubusercontent.com/AMFI-Disable/GimSell_Gimkit-Seller/main/gimkit-seller.user.js
 // @match        https://www.gimkit.com/*
 // @grant        none
 // @run-at       document-end
