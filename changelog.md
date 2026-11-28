@@ -8,10 +8,9 @@ All notable changes, UI enhancements, and feature updates for GimSell (Gimkit Du
 
 ### Changed
 
+- Added `@updateURL` and `@downloadURL` metadata headers to `gimkit-seller.user.js` (`v1.2.0`).
 - Added Simplified Chinese usage and contribution guides and bilingual reporting and review templates.
-
 - Replaced timed batch sales with a read-only locker preview. Rescans compare visible counts and flag missing or ambiguous stacks. Players choose quantities and confirm sales in Gimkit.
-
 - Restored the Star History chart section and links in `readme.md` and `website/src/main.ts`.
 
 ---
